@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+    <fieldset name="details" label="COM_NEWSMANAGER_ITEM_DETAILS">
+        <field name="id" type="hidden"/>
+        <field name="title"
+               type="text"
+               label="COM_NEWSMANAGER_ITEM_TITLE_LABEL"
+               description="COM_NEWSMANAGER_ITEM_TITLE_DESC"
+               size="40"
+               class="inputbox"
+               required="true"
+               default=""
+               />
+        <field name="alias"
+               type="text"
+               label="COM_NEWSMANAGER_ITEM_ALIAS"
+               description="COM_NEWSMANAGER_ITEM_ALIAS_DESC"
+               default=""
+               />
+        <field name="text"
+               type="editor"
+               label="COM_NEWSMANAGER_ITEM_TEXT"
+               description="COM_NEWSMANAGER_ITEM_DESC"
+               buttons="true"
+               />
+        <field name="published"
+               type="list"
+               label="JSTATUS"
+               description="JFIELD_PUBLISHED"
+               class="chzn-color-state"
+               filter="intval"
+               size="1"
+               default="1">
+               <option value="1">JPUBLISHED</option>
+               <option value="0">JUNPUBLISHED</option>
+        </field>
+        <field name="published_up"
+               type="calendar"
+               label="COM_NEWSMANAGER_PUBLISHED_UP_LABEL"
+               description="COM_NEWSMANAGER_PUBLISHED_UP_DESC"
+               format="%Y-%m-%d %H:%M:%S"
+               size="22"
+               />
+       <fields name="media">
+            <field name="media"
+                type="media"
+                label="COM_NEWSMANAGER_MEDIA_LABEL"
+                description="COM_NEWSMANAGER_MEDIA_DESC"
+                format="%Y-%m-%d %H:%M:%S"
+                size="22"
+                />
+        </fields>
+    </fieldset>
+</form>

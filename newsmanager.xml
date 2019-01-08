@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_newsmanager</name>
+    <author>mikle</author>
+    <authorEmail>trashBag@ro.ru</authorEmail>
+    <authorUrl></authorUrl>
+    <copyright></copyright>
+    <license></license>
+    <version>1.0</version>
+    <description>COM_NEWSMANAGER_DESC</description>
+    <creationDate>08 January 2019</creationDate>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>newsmanager.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>controllers</folder>
+        <folder>assets</folder>
+    </files>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_newsmanager.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_newsmanager.ini</language>
+    </languages>
+    <administration>
+        <menu>COM_NEWSMANAGER</menu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>newsmanager.php</filename>
+            <filename>controller.php</filename>
+            <filename>config.xml</filename>
+            <filename>access.xml</filename>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>controllers</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_newsmanager.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_newsmanager.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_newsmanager.sys.ini</language>
+            <language tag="ru-RU">language/ru-RU/ru-RU.com_newsmanager.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
